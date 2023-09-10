@@ -4,6 +4,7 @@ import photo from "./photo";
 import description from "./description";
 import price from "./price";
 import name from "./name";
+import { CardImg } from "react-bootstrap";
 
 const Product = ({ name, description = "No description" }) => {
   const handleClick = (title) => {
@@ -12,7 +13,7 @@ const Product = ({ name, description = "No description" }) => {
 
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img>{photo}</Card.Img>
+      <CardImg src=".\src\components\photo.js\photo" />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>
