@@ -13,7 +13,7 @@ const Product = ({ name, description = "No description" }) => {
 
   return (
     <Card style={{ width: "18rem" }}>
-      <CardImg src=".\src\components\photo.js\photo" />
+      <CardImg src={photo} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>
